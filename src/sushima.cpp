@@ -17,7 +17,7 @@
 //       # #    #      # #    # # #    # ######
 // #     # #    # #    # #    # # #    # #    #
 //  #####   ####   ####  #    # # #    # #    #
-                                              
+
 
 
 #include <Arduino.h>
@@ -99,7 +99,7 @@ void Sushima::setFanSpeed(uint8_t fan_speed) {
 }
 
 void Sushima::setFlap(uint8_t flap) {
-  /* Set Direction BYTE 8 bits[4-2] */
+  // Set Direction BYTE 8 bits[4-2]
   _flap=flap;
   //Reset flap bits
   _state[FANSPEED_FLAP_POS]&=SUSHIMA_FLAP_MASK;
@@ -176,10 +176,8 @@ void Sushima::begin() {
   _irsend.begin();
 }
 void Sushima::send() {
-  //irsend.sendGeneric(HDR_MARK, HDR_SPACE, ONE_MARK, ONE_SPACE, ZERO_MARK, ZERO_SPACE, 130, 0, cmd2, 14, 38, true, 0, 50);
   // If mode is AUTO or dry then we must set temperature to SUSHIMA_MODE_AUTO_DRY_TEMP
   if(_mode==MODE_AUTO || _mode==MODE_DRY) {
-    //_state[TEMP_POS]=0b11100000;
     _state[TEMP_POS]=SUSHIMA_MODE_AUTO_DRY_TEMP;
   }
   computeChecksum();

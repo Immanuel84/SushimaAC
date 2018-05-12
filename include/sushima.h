@@ -28,20 +28,20 @@
 #define SUSHIMA_ON                      0b00100100U
 
 // Constants
-#define SUSHIMA_MODE_AUTO               0b00010000U //16
-#define SUSHIMA_MODE_HEAT               0b10000000U //128
-#define SUSHIMA_MODE_COOL               0b11000000U //192
-#define SUSHIMA_MODE_DRY                0b01000000U //64
-#define SUSHIMA_MODE_AUTO_DRY_TEMP      0b11100000U //224
+#define SUSHIMA_MODE_AUTO               0b00010000U
+#define SUSHIMA_MODE_HEAT               0b10000000U
+#define SUSHIMA_MODE_COOL               0b11000000U
+#define SUSHIMA_MODE_DRY                0b01000000U
+#define SUSHIMA_MODE_AUTO_DRY_TEMP      0b11100000U
 
 
-#define SUSHIMA_FLAP_AUTO               0b00000000U //0
-#define SUSHIMA_FLAP_HIGHEST            0b00010000U //16
-#define SUSHIMA_FLAP_HIGH               0b00001000U //8
-#define SUSHIMA_FLAP_MID                0b00011000U //24
-#define SUSHIMA_FLAP_LOW                0b00000100U //4
-#define SUSHIMA_FLAP_LOWEST             0b00010100U //20
-#define SUSHIMA_FLAP_SWING              0b00011100U //
+#define SUSHIMA_FLAP_AUTO               0b00000000U
+#define SUSHIMA_FLAP_HIGHEST            0b00010000U
+#define SUSHIMA_FLAP_HIGH               0b00001000U
+#define SUSHIMA_FLAP_MID                0b00011000U
+#define SUSHIMA_FLAP_LOW                0b00000100U
+#define SUSHIMA_FLAP_LOWEST             0b00010100U
+#define SUSHIMA_FLAP_SWING              0b00011100U
 #define SUSHIMA_FLAP_MASK               0b11100000U
 
 #define SUSHIMA_FAN_SPEED_AUTO          0b00000000U
